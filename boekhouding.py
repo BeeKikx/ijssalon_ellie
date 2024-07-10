@@ -2,7 +2,7 @@ from helper import *                        # L10.1.4 import functies en variabe
 from presentatie import *					# L10.1.9 import alle functies en variabelen uit presentatie.py
 import csv									# L10.1.10 importeer het pakker csv.
 # L10.1.13 git init
-# L10.1.13 git commit -m "Les 10 - repository nieuwe projectfolder in VScode"
+# L10.1.13 git commit -m "Les 10 - repository nieuwe folder"
 # dictionary inkomsten
 inkomsten = {
 "Aardbeien-ijs-totaal" : 1000,
@@ -24,7 +24,3 @@ with open('boekhouding.csv', 'w', newline='') as csvfile:
 		writer = csv.writer(csvfile, delimiter=';')
 		writer.writerow([key, value])
 
-with open('mijn_dict.csv', 'w', newline='') as csvfile:
-	for key, value in mijn_dict.items():
-		writer = csv.writer(csvfile, delimiter=';')
-		writer.writerow([key, value])
